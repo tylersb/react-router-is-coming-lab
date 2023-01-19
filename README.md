@@ -82,9 +82,12 @@ At the top of your `App.js`, be sure to import `BrowserRouter` and `Route` from 
 
 You now need to set up your routes, specifically:
 
-`/houses` - all houses
-`/houses/:id` - all members from one houses
-`/houses/:houseId/members/:memberId` - one member
+| **URL Route** | **Component**  | **Content Description**                                                   |
+| :------------ | :------------- | :------------------------------------------------------------------------ |
+| /houses             | `<Houses />`     | List all family houses                                             |
+| /houses/:id     | `<House />` | Show a specific house, including members                        |
+| /houses/:houseId/members/:memberId      | `<Member />`  | Show a specific member from a house                          |
+
 
 Once you have completed these, make sure to test them out and check if you're hitting the right component.
 
